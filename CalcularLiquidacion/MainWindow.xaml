@@ -1,0 +1,27 @@
+﻿<Window x:Class="CalcularLiquidacion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalcularLiquidacion"
+        mc:Ignorable="d"
+        Title="Calcular Liquidación" Height="450" Width="551.609" WindowStyle="ThreeDBorderWindow" Icon="moneda.ico">
+    <Grid>
+        <Label x:Name="label" Content="Salario Mensual Bruto:" HorizontalAlignment="Left" Margin="32,35,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.66,-2.01"/>
+        <TextBox x:Name="txtSueldoMensual" HorizontalAlignment="Left" Height="23" Margin="163,35,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="Calcular" HorizontalAlignment="Left" Margin="163,236,0,0" VerticalAlignment="Top" Width="120" Click="Button_Click"/>
+        <Calendar x:Name="cdFechaIngreso" HorizontalAlignment="Left" Margin="331,84,0,0" VerticalAlignment="Top" Visibility="Hidden" SelectedDatesChanged="CdFechaIngreso_SelectedDatesChanged"/>
+        <TextBox x:Name="txtFechaIngreso" HorizontalAlignment="Left" Height="23" Margin="163,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label_Copy" Content="Fecha Ingreso:" HorizontalAlignment="Left" Margin="30,86,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.66,-2.01"/>
+        <Button x:Name="btnFechaIngreso" Content="..." HorizontalAlignment="Left" Margin="288,86,0,0" VerticalAlignment="Top" Width="27" Height="23" Click="BtnFechaIngreso_Click"/>
+        <Label x:Name="label1" Content="Fecha Despido:" HorizontalAlignment="Left" Margin="32,143,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox x:Name="txtFechaDespido" HorizontalAlignment="Left" Height="23" Margin="163,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnFechaDespido" Content="..." HorizontalAlignment="Left" Margin="288,146,0,0" VerticalAlignment="Top" Width="27" Click="BtnFechaDespido_Click"/>
+        <Calendar x:Name="cdFechaDespido" HorizontalAlignment="Left" Margin="331,143,0,0" VerticalAlignment="Top" Visibility="Hidden" SelectedDatesChanged="CdFechaDespido_SelectedDatesChanged"/>
+        <TextBox x:Name="txtSalarioMinimo" HorizontalAlignment="Left" Height="23" Margin="163,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label2" Content="Salario Minimo" HorizontalAlignment="Left" Margin="32,197,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox x:Name="txtTotal" HorizontalAlignment="Left" Height="23" Margin="163,286,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+        <Label x:Name="label2_Copy" Content="Te corresponde:" HorizontalAlignment="Left" Margin="30,286,0,0" VerticalAlignment="Top" Width="102"/>
+
+    </Grid>
+</Window>
